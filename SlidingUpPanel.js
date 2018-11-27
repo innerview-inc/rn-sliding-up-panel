@@ -261,7 +261,7 @@ class SlidingUpPanel extends React.Component {
       duration,
       easing,
       toValue: -Math.abs(toValue),
-      useNativeDriver: useNativeDriver,
+      useNativeDriver: true,
       delay: Platform.OS === 'android' ? 166.67 : undefined // to make it looks smooth on android
     })
 
